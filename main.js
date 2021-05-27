@@ -7,6 +7,8 @@ open.addEventListener('click', () => container.classList.add('show-nav'))
 close.addEventListener('click', () => container.classList.remove('show-nav'));
 
 
+
+
 fetch('https://api.covid19api.com/summary')
 .then((apidata)=>{return apidata.json();
 }).then((actualdata)=>{
@@ -42,3 +44,21 @@ fetch('https://api.covid19api.com/summary')
     }
 })
 .catch((error)=>{console.log(error);})
+
+// var i = 0;
+// var txt = 'Worldwide Corona Cases'; /* The text */
+// var speed = 15; /* The speed/duration of the effect in milliseconds */
+
+// function typeWriter() {
+//   if (i < txt.length) {
+//     document.getElementById("tobeplayed").innerHTML += txt.charAt(i);
+//     i++;
+//     setTimeout(typeWriter, speed);
+//   }
+// }
+// typeWriter();
+
+ 
+
+
+

@@ -7,6 +7,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css" />
     <title>Coronavirus World Wide</title>
+    <script>
+      var i = 0;
+var txt = 'Lorem ipsum dummy text blabla.';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+    </script>
   </head>
   <body>
     <div class="container">
@@ -20,6 +33,25 @@
           </button>
         </div>
       </div>
+
+      <div class="main">
+        <div class="symptoms">
+          <h1>Symptoms of COVID-19</h1>
+          <h2>Watch for Symptoms</h2>
+          <p></p>
+        </div>
+        <div class="precautions">b</div>
+
+
+      </div>
+
+
+      <div class="typewritter">
+        <div class="typing">
+          <p id="tobeplayed">Worldwide Corona Cases</p>
+        </div>
+      </div>
+
 
       
       <div class="table">
